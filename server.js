@@ -1,10 +1,11 @@
-// Import required modules
 import express from 'express';
+import cors from 'cors';
 
 const app = express();
-const PORT = 3000;
+const PORT = 3002;
 
 // Middleware to parse JSON requests
+app.use(cors());
 app.use(express.json());
 
 // Sample exercise routines
